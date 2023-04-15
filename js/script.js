@@ -12,12 +12,12 @@ showBtns.forEach(btn => {
   });
 });
 
-closeModalBtn.addEventListener('click', function () {
-  modalWindow.classList.add('hidden');
-  overlay.classList.add('hidden');
-});
+const closeModalWindow = function (button) {
+  button.addEventListener('click', function () {
+    modalWindow.classList.add('hidden');
+    overlay.classList.add('hidden');
+  });
+};
 
-overlay.addEventListener('click', function () {
-  modalWindow.classList.add('hidden');
-  overlay.classList.add('hidden');
-});
+closeModalWindow(closeModalBtn);
+closeModalWindow(overlay);
