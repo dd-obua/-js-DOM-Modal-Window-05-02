@@ -45,16 +45,29 @@ body {
 .modal-window {
   width: 70%;
   background: #fff;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
   padding: 6.4rem;
   margin: 0 auto;
 
   position: absolute;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .modal-window h2 {
   margin-bottom: 2rem;
+}
+
+.close-modal {
+  position: absolute;
+  font-size: 4.8rem;
+  font-weight: normal;
+  top: 0;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
