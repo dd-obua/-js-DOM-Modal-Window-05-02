@@ -1,9 +1,12 @@
 'use strict';
 
-const showBtns = document.querySelectorAll('.btn');
-const modalWindow = document.querySelector('.modal-window');
-const closeModalBtn = document.querySelector('.close-modal');
-const overlay = document.querySelector('.overlay');
+const select = selector => document.querySelector(selector);
+const selectAll = selector => document.querySelectorAll(selector);
+
+const showBtns = selectAll('.btn');
+const modalWindow = select('.modal-window');
+const closeModalBtn = select('.close-modal');
+const overlay = select('.overlay');
 
 showBtns.forEach(btn => {
   btn.addEventListener('click', () => {
