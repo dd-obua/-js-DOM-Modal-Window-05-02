@@ -68,10 +68,6 @@ body {
   cursor: pointer;
 }
 
-.show {
-  display: block;
-}
-
-.hide {
+.hidden {
   display: none;
 }
