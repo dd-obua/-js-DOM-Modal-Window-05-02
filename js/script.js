@@ -8,7 +8,7 @@ const modalWindow = select('.modal-window');
 const closeModalBtn = select('.close-modal');
 const overlay = select('.overlay');
 
-const openModal = function () {
+const showModal = function () {
   modalWindow.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
@@ -18,7 +18,7 @@ const closeModal = function () {
   overlay.classList.add('hidden');
 };
 
-showBtns.forEach(btn => btn.addEventListener('click', openModal));
+showBtns.forEach(btn => btn.addEventListener('click', showModal));
 
 closeModalBtn.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
