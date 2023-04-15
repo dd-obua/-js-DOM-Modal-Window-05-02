@@ -13,6 +13,6 @@ showBtns.forEach(btn => {
 });
 
 closeModalBtn.addEventListener('click', function () {
-  modalWindow.classList.add('hide');
-  window.location.reload();
+  modalWindow.classList.add('hidden');
+  overlay.classList.add('hidden');
 });
