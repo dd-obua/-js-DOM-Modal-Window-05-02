@@ -1,7 +1,14 @@
-const showBtns = document.querySelector('.btns');
+const showBtns = document.querySelectorAll('.btn');
 const modalWindow = document.querySelector('.modal-window');
 const closeModalBtn = document.querySelector('.close-modal');
 
-showBtns.addEventListener('click', function () {
-  modalWindow.classList.add('show');
+showBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    modalWindow.classList.add('show');
+  });
+});
+
+closeModalBtn.addEventListener('click', function () {
+  modalWindow.classList.add('hide');
+  window.location.reload();
 });
