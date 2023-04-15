@@ -19,17 +19,17 @@ body {
 .container {
   height: 100vh;
   background: linear-gradient(to top left, #28b487, #7dd56f);
-  /* padding-top: 4.2rem; */
   position: relative;
 
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   position: relative;
 }
 
 .btn {
   margin: 5rem 2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   border: none;
   padding: 1.6rem 3.2rem;
