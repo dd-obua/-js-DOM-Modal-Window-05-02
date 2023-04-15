@@ -15,12 +15,10 @@ showBtns.forEach(btn => {
   });
 });
 
-const closeModalWindow = function (button) {
-  button.addEventListener('click', function () {
-    modalWindow.classList.add('hidden');
-    overlay.classList.add('hidden');
-  });
+const closeModal = function () {
+  modalWindow.classList.add('hidden');
+  overlay.classList.add('hidden');
 };
 
-closeModalWindow(closeModalBtn);
-closeModalWindow(overlay);
+closeModalBtn.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
