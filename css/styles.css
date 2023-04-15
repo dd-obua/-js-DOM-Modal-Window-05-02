@@ -53,6 +53,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 
 .modal-window h2 {
@@ -72,6 +73,6 @@ body {
   display: block;
 }
 
-.hidden {
+.hide {
   display: none;
 }
